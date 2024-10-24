@@ -5,7 +5,7 @@
 # This program reads a string from the user containing a date in the "mm/dd/yyyy" format
 # and print the date in the format "Month Day, Year" like "April 20, 2024".
 
-# This program use funcrion with nam "dateToString"
+# This program use function with name "dateToString"
 #   Purpose: Transfer date from one format to another
 #   Parameters: User input like "mm/dd/yyyy"
 #   Return: Print "April 20, 2024"   
@@ -28,7 +28,7 @@ def dateToString(date):
     return formatted_date
 
 # User input
-user_input = input("Enter a date in the form mm/dd/yyyy: ")
+user_input = input("Please input date in format mm/dd/yyyy: ")
 
 # Call the function and print the formatted date
 print(dateToString(user_input))

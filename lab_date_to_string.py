@@ -14,6 +14,7 @@
 date = ""
 error_month = "Month error, wrong format or data"
 error_day = "Day error, wrong format or data"
+error_year = "Year error, wrong format or data"
 
 # Function to perform convertation
 def dateToString(date):
@@ -65,6 +66,10 @@ def dateToString(date):
     if int(dd) <= 0 or int(dd) > 31:
         return error_day
     
+    # Checking year valid input
+    if int(yyyy) < 0 or int(yyyy) > 9999:
+        return error_year
+
     # Combining results in to one statement
     new_date_format = mm + " " + dd + ", " + yyyy
 #    return transformed_date
